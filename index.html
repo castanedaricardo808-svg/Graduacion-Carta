@@ -19,21 +19,27 @@
       <div class="icon">🎓</div>
       <h1>¡Felicitaciones, Michelle!</h1>
       <p>Hoy es tu día, eres la protagonista y la que merece hoy ser muy feliz.<br>
-      Te deseo los mayores éxitos de ahora en adelante y te recuerdo que te quiero. Eres la niña más importante en mi vida y eso no va a cambiar en mucho tiempo ❤️</p>
+      Te deseo los mayores éxitos de ahora en adelante y te recuerdo que te quiero. 
+      Eres la persona más importante en mi vida y eso no va a cambiar en mucho tiempo ❤️</p>
       <p>Con todo mi amor,<br>Tu novio Ricardo</p>
 
-      <!-- Reproductor de música -->
-      <audio controls>
-        <source src="graduacion.mp3" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
+      <!-- Reproductor decorado -->
+      <div id="audio-wrapper">
+        <audio id="musica" controls>
+          <source src="graduacion.mp3" type="audio/mpeg">
+          Tu navegador no soporta audio HTML5.
+        </audio>
+      </div>
 
-    <!-- Confeti -->
-    <div class="confetti-container"></div>
+      <!-- Cinta roja (oculta al inicio) -->
+      <div class="cinta-roja hidden" onclick="mostrarImagen()">🎀 Ábreme 🎀</div>
+      <img src="mi_foto.png" alt="Imagen desplegada" class="imagen-desplegada hidden">
+    </div>
   </div>
+
+  <!-- Contenedor para el confeti -->
+  <div class="confetti-container"></div>
 
   <script src="script.js"></script>
 </body>
-
 </html>
